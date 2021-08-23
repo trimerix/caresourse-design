@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.993" height="29.992" viewBox="0 0 29.993 29.992">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.508" cy="1.225" r="1.347" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3b5998"/>
+      <stop offset="0.301" stop-color="#3b5998"/>
+      <stop offset="1" stop-color="#5f83cf"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_381" data-name="Group 381" transform="translate(-503.731 53.871)">
+    <path id="Rectangle_949" data-name="Rectangle 949" d="M6.161,0H23.832a6.161,6.161,0,0,1,6.161,6.161v17.67a6.16,6.16,0,0,1-6.16,6.16H6.16A6.16,6.16,0,0,1,0,23.831V6.161A6.161,6.161,0,0,1,6.161,0Z" transform="translate(503.731 -53.871)" fill="url(#radial-gradient)"/>
+    <path id="Path_331" data-name="Path 331" d="M526.791-45.626h2.767v-4.349h-4.146a5.619,5.619,0,0,0-4.269,2.095s-1.132,1.067-1.149,4.192h0v3.262h-4.1v4.618h4.1v11.929h4.726V-35.808h4.067l.566-4.618h-4.633v-3.262h0A1.9,1.9,0,0,1,526.791-45.626Z" fill="#fff"/>
+  </g>
+</svg>

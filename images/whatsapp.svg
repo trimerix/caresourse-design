@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.993" height="29.992" viewBox="0 0 29.993 29.992">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.466" cy="1.201" r="1.286" gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
+      <stop offset="0.26" stop-color="#36b649"/>
+      <stop offset="0.76" stop-color="#57c965"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.302" cy="1.028" r="1.07" gradientTransform="translate(-0.005) scale(1.009 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0.219" stop-color="#e7e7e7"/>
+      <stop offset="0.883" stop-color="#fcfcfc"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="0.132" cy="1.162" r="1.032" gradientTransform="translate(0.033) scale(0.933 1)" gradientUnits="objectBoundingBox">
+      <stop offset="0.219" stop-color="#e7e7e7"/>
+      <stop offset="0.883" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_374" data-name="Group 374" transform="translate(-461.261 54.371)">
+    <path id="Rectangle_944" data-name="Rectangle 944" d="M6.16,0H23.831a6.161,6.161,0,0,1,6.161,6.161v17.67a6.161,6.161,0,0,1-6.161,6.161H6.16A6.16,6.16,0,0,1,0,23.832V6.16A6.16,6.16,0,0,1,6.16,0Z" transform="translate(461.261 -54.371)" fill="url(#radial-gradient)"/>
+    <g id="Group_373" data-name="Group 373">
+      <path id="Path_322" data-name="Path 322" d="M476.46-50.432a10.953,10.953,0,0,0-10.954,10.953,10.894,10.894,0,0,0,1.536,5.593l-1.381,5.568,5.489-1.58a10.913,10.913,0,0,0,5.31,1.373,10.953,10.953,0,0,0,10.953-10.954A10.952,10.952,0,0,0,476.46-50.432Zm.124,20.088a9.047,9.047,0,0,1-5.152-1.6l-3.126.9.8-3.22a9.057,9.057,0,0,1-1.615-5.172,9.094,9.094,0,0,1,9.094-9.094,9.1,9.1,0,0,1,9.094,9.094A9.094,9.094,0,0,1,476.584-30.344Z" fill="url(#radial-gradient-2)"/>
+      <path id="Path_323" data-name="Path 323" d="M473.69-40.346c.128-.146.254-.292.381-.438.213-.248.533-.487.549-.843a2.493,2.493,0,0,0-.227-.994c-.077-.2-.157-.4-.234-.6a3.964,3.964,0,0,0-.518-1.088.971.971,0,0,0-1.108-.173s-2.15,1.033-1.488,3.1a9.725,9.725,0,0,0,7.73,7.027s2.314.331,2.934-1.075a2.467,2.467,0,0,0,.2-1.06.88.88,0,0,0-.511-.684c-.34-.194-.642-.377-1.029-.568a1.649,1.649,0,0,0-1.109-.3,1.627,1.627,0,0,0-.678.543c-.251.265-.507.527-.76.791C477.824-36.71,474.558-37.909,473.69-40.346Z" fill="url(#radial-gradient-3)"/>
+    </g>
+  </g>
+</svg>
