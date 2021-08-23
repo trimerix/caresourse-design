@@ -189,6 +189,9 @@
             padding: 0;
             display: flex;
             justify-content: space-evenly;
+            li {
+                position: relative;
+            }
             a {
                 font-family: 'Roboto', sans-serif;
                 font-size: 16px;
@@ -198,6 +201,13 @@
                 padding: 12px 15px;
                 display: inline-block;
                 line-height: 16px;
+                position: relative;
+            }
+            .dropdown-menu {
+                width: 200px;
+                a {
+                    text-transform: none;
+                }
             }
         }
     }
@@ -295,6 +305,16 @@
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
     }
     
+    .dropdown-container {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: none;
+        &.active {
+            display: block !important;
+        }
+    }
+    
     #menu li {
         display: block;
         margin-left: 0;
@@ -323,7 +343,7 @@
     }
     
     #menu .active {
-        background-color: #ea7e33;
+        background-color: #033db3;
     }
     
     // Banner Start 
@@ -350,8 +370,8 @@
     .banner-nav {
         display: none;
         flex-direction: column;
+        gap: 35px;
         .right-md {
-            margin-left: auto;
             ul {
                 align-items: flex-end;
                 li {
@@ -373,7 +393,6 @@
             }
         }
         .left-md {
-            margin-right: auto;
             li {
                 text-align: left;
                 position: relative;
@@ -399,6 +418,36 @@
             flex-direction: column;
             gap: 15px;
             position: relative;
+            .dropdown {
+                display: none;
+            }
+            .mob-dropdown {
+                width: 100%;
+                text-align: center;
+                &::before {
+                    display: none;
+                }
+                .dropdown {
+                    width: 100%;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    z-index: 99;
+                    li {
+                        width: 100%;
+                        &::before {
+                            display: none;
+                        }
+                        a {
+                            background-color: #56bd60c9;
+                        }
+                    }
+                }
+            }
+            li {
+                width: 135px;
+            }
             a {
                 font-family: 'Roboto', sans-serif;
                 font-size: 14px;
@@ -408,7 +457,7 @@
                 padding: 12px 15px;
                 display: inline-block;
                 line-height: 16px;
-                width: 135px;
+                width: 100%;
             }
         }
     }

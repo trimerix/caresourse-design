@@ -62,7 +62,13 @@
 
                 <ul id="menu">
                     <li>
-                        <a href="product-list.php">Products</a>
+                        <a href="#" class="dropdown-btn">Products</a>
+                        <ul class="dropdown-container">
+                            <li><a href="product.php">Product Name</a></li>
+                            <li><a href="product.php">Product Name</a></li>
+                            <li><a href="product.php">Product Name</a></li>
+                            <li><a href="product.php">Product Name</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Best Sellers</a>
@@ -93,7 +99,14 @@
                     <a href="about.php">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="product.php">Product Name</a></li>
+                        <li><a href="product.php">Product Name</a></li>
+                        <li><a href="product.php">Product Name</a></li>
+                        <li><a href="product.php">Product Name</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -101,7 +114,14 @@
         <div class="left-md">
             <ul class="menu">
                 <li>
-                    <a href="product.php">Products</a>
+                    <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Products</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a href="product.php">Product Name</a></li>
+                        <li><a href="product.php">Product Name</a></li>
+                        <li><a href="product.php">Product Name</a></li>
+                        <li><a href="product.php">Product Name</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">Best Sellers</a>

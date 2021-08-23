@@ -114,6 +114,12 @@ $('.carousel').carousel({
 });
 </script>
 
+<!-- Menu Dropdown  -->
+<script>
+$(".dropdown-btn").click(function() {
+    $(".dropdown-container").toggleClass("active");
+});
+</script>
 <!-- GetButton.io widget -->
 <!-- <script type="text/javascript">
 (function() {

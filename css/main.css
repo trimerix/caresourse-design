@@ -241,6 +241,10 @@ header .menu {
           justify-content: space-evenly;
 }
 
+header .menu li {
+  position: relative;
+}
+
 header .menu a {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -250,6 +254,15 @@ header .menu a {
   padding: 12px 15px;
   display: inline-block;
   line-height: 16px;
+  position: relative;
+}
+
+header .menu .dropdown-menu {
+  width: 200px;
+}
+
+header .menu .dropdown-menu a {
+  text-transform: none;
 }
 
 /* Mobile Menu  */
@@ -362,6 +375,17 @@ nav a:hover {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
+.dropdown-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+.dropdown-container.active {
+  display: block !important;
+}
+
 #menu li {
   display: block;
   margin-left: 0;
@@ -392,7 +416,7 @@ nav a:hover {
 }
 
 #menu .active {
-  background-color: #ea7e33;
+  background-color: #033db3;
 }
 
 .banner-wrapper {
@@ -428,10 +452,7 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.banner-nav .right-md {
-  margin-left: auto;
+  gap: 35px;
 }
 
 .banner-nav .right-md ul {
@@ -457,10 +478,6 @@ nav a:hover {
   position: absolute;
   left: -45px;
   top: 0;
-}
-
-.banner-nav .left-md {
-  margin-right: auto;
 }
 
 .banner-nav .left-md li {
@@ -497,6 +514,44 @@ nav a:hover {
   position: relative;
 }
 
+.banner-nav .menu .dropdown {
+  display: none;
+}
+
+.banner-nav .menu .mob-dropdown {
+  width: 100%;
+  text-align: center;
+}
+
+.banner-nav .menu .mob-dropdown::before {
+  display: none;
+}
+
+.banner-nav .menu .mob-dropdown .dropdown {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 99;
+}
+
+.banner-nav .menu .mob-dropdown .dropdown li {
+  width: 100%;
+}
+
+.banner-nav .menu .mob-dropdown .dropdown li::before {
+  display: none;
+}
+
+.banner-nav .menu .mob-dropdown .dropdown li a {
+  background-color: #56bd60c9;
+}
+
+.banner-nav .menu li {
+  width: 135px;
+}
+
 .banner-nav .menu a {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -506,7 +561,7 @@ nav a:hover {
   padding: 12px 15px;
   display: inline-block;
   line-height: 16px;
-  width: 135px;
+  width: 100%;
 }
 
 .banner {

@@ -25,7 +25,13 @@
                 <div class="left-md">
                     <ul class="menu">
                         <li>
-                            <a href="product.php">Products</a>
+                            <a href="#">Products</a>
+                            <ul class="dropdown">
+                                <li><a href="product.php">Product Name</a></li>
+                                <li><a href="product.php">Product Name</a></li>
+                                <li><a href="product.php">Product Name</a></li>
+                                <li><a href="product.php">Product Name</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">Best Sellers</a>
@@ -185,3 +191,13 @@
 <!-- Why should you choose us End -->
 
 <?php include_once("footer.php");?>
+
+<!-- Mobile Nav Dropdown  -->
+
+
+
+<script>
+$(".banner-nav .menu li").on("click", function() {
+    $(this).toggleClass("mob-dropdown");
+});
+</script>
