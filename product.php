@@ -6,7 +6,7 @@
     <ul class="page-navigation">
         <li><span><i class="fas fa-home"></i></span></li>
         <li><span class="font-weight-bold">/</span></li>
-        <li><span>All</span></li>
+        <li><span>All products</span></li>
     </ul>
 
     <div class="row">
