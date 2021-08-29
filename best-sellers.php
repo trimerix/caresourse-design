@@ -11,6 +11,7 @@
 
     <div class="row">
         <div class="product-menu">
+
             <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <li>
                     <a class="nav-link active" id="navtab1-tab" data-toggle="pill" href="#navtab1" role="tab"
@@ -24,31 +25,16 @@
                     <a class="nav-link" id="navtab3-tab" data-toggle="pill" href="#navtab3" role="tab"
                         aria-controls="navtab3" aria-selected="false">Laboratory Consumables</a>
                 </li>
-                <li class="sub-menu"><a class="nav-link" href='#'>Product Category<div class="fa fa-caret-down right">
-                        </div></a>
-                    <ul>
-                        <li><a href="#">Product Category</a></li>
-                        <li><a href="#">Product Category</a></li>
-                        <li class="sub-menu"><a class="nav-link" href='#'>Product Category<div
-                                    class="fa fa-caret-down right">
-                                </div></a>
-                            <ul>
-                                <li><a href="#">Product Category</a></li>
-                                <li><a href="#">Product Category</a></li>
-                                <li class="sub-menu"><a class="nav-link" href='#'>Product Category<div
-                                            class="fa fa-caret-down right">
-                                        </div></a>
-                                    <ul>
-                                        <li><a class="nav-link" id="navtab2-tab" data-toggle="pill" href="#navtab2"
-                                                role="tab" aria-controls="navtab2" aria-selected="false">Laboratory
-                                                Cabinets & Medical Furniture</a></li>
-                                        <a class="nav-link" id="navtab1-tab" data-toggle="pill" href="#navtab1"
-                                            role="tab" aria-controls="navtab1" aria-selected="false">Laboratory Cabinets
-                                            & Medical Furniture</a>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                <li class="sub-menu">
+                    <a class="nav-link" id="navtab4-tab" data-toggle="pill" href="#navtab4" role="tab"
+                        aria-controls="navtab4" aria-selected="false">Laboratory Reagents <i
+                            class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub Category 1 </a></li>
+                        <li><a href="#">Sub Category 1 </a></li>
+                        <li><a href="#">Sub Category 1</a></li>
+                        <li><a href="#">Sub Category 1 </a></li>
+                        <li><a href="#">Sub Category 1 </a></li>
                     </ul>
                 </li>
                 <li>
@@ -67,11 +53,6 @@
             </ul>
 
         </div>
-        <div class="overlay"></div>
-        <div class="mobile-product-menu">
-            <h3>Category</h3>
-            <img src="images/mobile-filter.svg" alt="" id="mobile-filter">
-        </div>
         <div class="product-right-md">
             <div class="row product-head">
                 <div class="sort">
@@ -79,10 +60,10 @@
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Popular
+                            Best Seller
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Best Seller</a>
+                            <a class="dropdown-item" href="#">Popular</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
@@ -108,13 +89,11 @@
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="navtab1" role="tabpanel" aria-labelledby="navtab1">
                     <div class="col-sm-4 product-box">
-
                         <div class="image-wrapper">
                             <a href="#"><i class="far fa-heart"></i></a>
                             <img src="images/banner-img.svg" alt="The Cool Product Name">
                         </div>
                         <h3><a href="product-list.php">The Cool Product Name</a></h3>
-
                     </div>
 
                     <div class="col-sm-4 product-box">
@@ -235,10 +214,6 @@
                     ...</div>
                 <div class="tab-pane fade" id="navtab4" role="tabpanel" aria-labelledby="navtab4-tab">
                     ...</div>
-                <div class="tab-pane fade" id="navtab31" role="tabpanel" aria-labelledby="navtab31-tab">
-                    ...</div>
-                <div class="tab-pane fade" id="navtab32" role="tabpanel" aria-labelledby="navtab32-tab">
-                    ...</div>
             </div>
 
 
@@ -265,20 +240,5 @@
 $(".sub-menu a").click(function() {
     $(".dropdown-content").toggleClass("active");
     $(".sub-menu a i").toggleClass("rotate");
-});
-</script>
-
-<!-- Mobile Filter  -->
-<script>
-$(document).ready(function() {
-    $("#mobile-filter").click(function() {
-        $(".product-menu").addClass("filter-nav");
-        $(".overlay").addClass("show");
-    });
-
-    $(".overlay").click(function() {
-        $(".product-menu").removeClass("filter-nav");
-        $(".overlay").removeClass("show");
-    });
 });
 </script>

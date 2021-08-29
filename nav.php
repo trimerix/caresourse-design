@@ -61,31 +61,36 @@
                 <span></span>
 
                 <ul id="menu">
-                    <li>
-                        <a href="#" class="dropdown-btn">Products</a>
-                        <ul class="dropdown-container">
-                            <li><a href="product.php">Product Name</a></li>
-                            <li><a href="product.php">Product Name</a></li>
-                            <li><a href="product.php">Product Name</a></li>
-                            <li><a href="product.php">Product Name</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class='sub-menu'><a href='#settings'>Product<div class='fa fa-caret-down right'></div></a>
+                        <ul>
+                            <li><a href="#">Product Category</a></li>
+                            <li><a href="#">Product Category</a></li>
+                            <li class='sub-menu'><a href='#settings'>Product Category<div
+                                        class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a href="#">Product Category</a></li>
+                                    <li><a href="#">Product Category</a></li>
+                                    <li class='sub-menu'><a href='#settings'>Product Category<div
+                                                class='fa fa-caret-down right'></div></a>
+                                        <ul>
+                                            <li><a href="product.php">Product Category</a></li>
+                                            <li><a href="product.php">Product Category</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">Best Sellers</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="index.php">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
+                    <li><a href='#profile'>
+                            Best Sellers</a></li>
+                    <li><a href="#">Contact us</a></li>
+
+
                 </ul>
+
             </div>
         </nav>
     </div>
@@ -99,14 +104,7 @@
                     <a href="about.php">About Us</a>
                 </li>
                 <li>
-                    <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">Blog</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a href="product.php">Product Name</a></li>
-                        <li><a href="product.php">Product Name</a></li>
-                        <li><a href="product.php">Product Name</a></li>
-                        <li><a href="product.php">Product Name</a></li>
-                    </ul>
+                    <a href="#">Blog</a>
                 </li>
             </ul>
         </div>
@@ -114,17 +112,31 @@
         <div class="left-md">
             <ul class="menu">
                 <li>
-                    <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">Products</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a href="product.php">Product Name</a></li>
-                        <li><a href="product.php">Product Name</a></li>
-                        <li><a href="product.php">Product Name</a></li>
-                        <li><a href="product.php">Product Name</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">Product Category</a></li>
+                            <li><a tabindex="-1" href="#">Product Category</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">Product Category <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Product Sub Category</a></li>
+                                    <li><a tabindex="-1" href="#">Product Sub Category</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="#">Product Sub Category <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="product.php">Sub Category</a></li>
+                                            <li><a href="product.php">Sub Category</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
-                    <a href="#">Best Sellers</a>
+                    <a href="best-sellers.php">Best Sellers</a>
                 </li>
                 <li>
                     <a href="#">Contact Us</a>
@@ -135,3 +147,29 @@
     </div>
 </header>
 <!-- Header End  -->
+
+
+<style>
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+</style>

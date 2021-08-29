@@ -74,6 +74,9 @@
             <div class="right-md">
                 <h6>Contact</h6>
                 <ul class="footer-ul">
+                    <li><a href="#">
+                            Warehouse No: 3, Plot 215-321 <br> Umm Ramool, Rashidiya <br> PO Box # 94703, Dubai, UAE
+                        </a></li>
                     <li><a href="mailto:sales@caresourceglobal.com">sales@caresourceglobal.com</a></li>
                     <li><a href="tel:971508026308">Hotline: +971 50 8026308</a></li>
                 </ul>
@@ -100,6 +103,7 @@
 <script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="js/popper.min.js" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- Font Awesome Icon  -->
 <script src="https://kit.fontawesome.com/d6a81ea96f.js" crossorigin="anonymous"></script>
@@ -120,32 +124,27 @@ $(".dropdown-btn").click(function() {
     $(".dropdown-container").toggleClass("active");
 });
 </script>
-<!-- GetButton.io widget -->
-<!-- <script type="text/javascript">
-(function() {
-    var options = {
-        whatsapp: "+919633254338", // WhatsApp number
-        email: "favasrahmank0@gmail.com", // Email
-        call_to_action: "Message us", // Call to action
-        button_color: "#002672", // Color of button
-        position: "left", // Position may be 'right' or 'left'
-        order: "whatsapp,email", // Order of buttons
-    };
-    var proto = document.location.protocol,
-        host = "getbutton.io",
-        url = proto + "//static." + host;
-    var s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = url + '/widget-send-button/js/init.js';
-    s.onload = function() {
-        WhWidgetSendButton.init(host, proto, options);
-    };
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-})();
-</script> -->
-<!-- /GetButton.io widget -->
+
+
+<!-- Dropdown Start  -->
+<script>
+$(document).ready(function() {
+    $('.dropdown-submenu a.test').on("click", function(e) {
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+});
+</script>
+
+<!-- mobile dropdown  -->
+<script>
+$('.sub-menu ul').hide();
+$(".sub-menu a").click(function() {
+    $(this).parent(".sub-menu").children("ul").slideToggle("100");
+    $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+});
+</script>
 </body>
 
 </html>

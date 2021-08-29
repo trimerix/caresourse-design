@@ -24,17 +24,34 @@
 
                 <div class="left-md">
                     <ul class="menu">
-                        <li>
-                            <a href="#">Products</a>
-                            <ul class="dropdown">
-                                <li><a href="product.php">Product Name</a></li>
-                                <li><a href="product.php">Product Name</a></li>
-                                <li><a href="product.php">Product Name</a></li>
-                                <li><a href="product.php">Product Name</a></li>
-                            </ul>
+                        <li id="mob-dropdown">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Product Category</a></li>
+                                    <li><a tabindex="-1" href="#">Product Category</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" tabindex="-1" href="#">Product Category <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Product Sub Category</a></li>
+                                            <li><a tabindex="-1" href="#">Product Sub Category</a></li>
+                                            <li class="dropdown-submenu">
+                                                <a class="test" href="#">Product Sub Category <span
+                                                        class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="product.php">Sub Category</a></li>
+                                                    <li><a href="product.php">Sub Category</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">Best Sellers</a>
+                            <a href="best-sellers.php">Best Sellers</a>
                         </li>
                         <li>
                             <a href="#">Contact Us</a>
@@ -104,43 +121,43 @@
         <div class="col">
             <img src="images/banner-img.svg" alt="Laboratory Cabinets & Medical Furnitur">
             <h5>Laboratory Cabinets & Medical Furniture</h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
         <div class="col">
             <img src="images/product2.svg" alt="Laboratory Consumables">
             <h5>Laboratory Consumables</h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
         <div class="col">
             <img src="images/banner-img.svg" alt="Laboratory Reagents">
             <h5>Laboratory Reagents</h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
         <div class="col">
             <img src="images/product2.svg" alt="Marine Test Kits">
             <h5>Marine Test Kits</h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
 
         <div class="col">
             <img src="images/product2.svg" alt="Medical Instruments For Export Only">
             <h5>Medical Instruments For Export Only</h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
         <div class="col">
             <img src="images/banner-img.svg" alt="Scientific & Laboratory Equipment">
             <h5>Scientific & Laboratory Equipment </h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
         <div class="col">
             <img src="images/product2.svg" alt="Water Testing Strips & Instruments">
             <h5>Water Testing Strips & Instruments</h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
         <div class="col">
             <img src="images/banner-img.svg" alt="Other Products">
             <h5>Other Products</h5>
-            <a href="product-list.php">Discover More</a>
+            <a href="product.php">Discover More</a>
         </div>
     </div>
 </div>
@@ -197,7 +214,7 @@
 
 
 <script>
-$(".banner-nav .menu li").on("click", function() {
+$("#mob-dropdown").on("click", function() {
     $(this).toggleClass("mob-dropdown");
 });
 </script>

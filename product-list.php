@@ -2,39 +2,53 @@
  include_once("nav.php");?>
 
 
+
+<style>
+.fade.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-dialog {
+    max-width: 600px;
+    margin: auto;
+}
+</style>
 <!-- First Section Start -->
 <div class="container product-banner">
+    <ul class="page-navigation">
+        <li><span><i class="fas fa-home"></i></span></li>
+        <li><span class="font-weight-bold">/</span></li>
+        <li><span>All products</span></li>
+        <li><span class="font-weight-bold">/</span></li>
+        <li><span>Category</span></li>
+        <li><span class="font-weight-bold">/</span></li>
+        <li><span>Sub Category</span></li>
+    </ul>
     <div class="row">
         <div class="col-sm-6">
-            <ul class="page-navigation">
-                <li><span><i class="fas fa-home"></i></span></li>
-                <li><span class="font-weight-bold">/</span></li>
-                <li><span>All products</span></li>
-                <li><span class="font-weight-bold">/</span></li>
-                <li><span>Category</span></li>
-                <li><span class="font-weight-bold">/</span></li>
-                <li><span>Sub Category</span></li>
-            </ul>
+
             <div class="main">
 
                 <div class="slider slider-for">
                     <div class="image">
-                        <img src="images/banner-img.svg" alt="">
+                        <img src="images/banner-img.svg" alt="" data-toggle="modal" data-target="#exampleModal">
                     </div>
                     <div class="image">
-                        <img src="images/product2.svg" alt="">
+                        <img src="images/product2.svg" alt="" data-toggle="modal" data-target="#exampleModal">
                     </div>
                     <div class="image">
-                        <img src="images/banner-img.svg" alt="">
+                        <img src="images/banner-img.svg" alt="" data-toggle="modal" data-target="#exampleModal">
                     </div>
                     <div class="image">
-                        <img src="images/product2.svg" alt="">
+                        <img src="images/product2.svg" alt="" data-toggle="modal" data-target="#exampleModal">
                     </div>
                     <div class="image">
-                        <img src="images/banner-img.svg" alt="">
+                        <img src="images/banner-img.svg" alt="" data-toggle="modal" data-target="#exampleModal">
                     </div>
                     <div class="image">
-                        <img src="images/product2.svg" alt="">
+                        <img src="images/product2.svg" alt="" data-toggle="modal" data-target="#exampleModal">
                     </div>
                 </div>
                 <div class="slider slider-nav">
@@ -61,7 +75,7 @@
             </div>
         </div>
         <div class="col right-md">
-            <span class="feacherd">FEATURED</span>
+            <!-- <span class="feacherd">FEATURED</span> -->
             <h1>The Cool Product
                 Name</h1>
             <span>Product ID: 261311</span>
@@ -78,6 +92,7 @@
                 <a href="#" class="get-quote"><i class="far fa-envelope"></i> Get Quote</a>
                 <a href="#" class="get-whatsapp"><i class="fab fa-whatsapp"></i> Get Quote</a>
                 <a href="#"><i class="far fa-heart wish-list"></i></a>
+                <a href="#"><i class="fas fa-share wish-list"></i></a>
             </div>
         </div>
     </div>
@@ -93,6 +108,14 @@
                     aria-selected="true">Features</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" id="models-tab" data-toggle="tab" href="#models" role="tab" aria-controls="models"
+                    aria-selected="false">Models</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="assesories-tab" data-toggle="tab" href="#assesories" role="tab"
+                    aria-controls="assesories" aria-selected="false">Assesories</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                     aria-controls="profile" aria-selected="false">Specifications</a>
             </li>
@@ -104,6 +127,7 @@
                 <a class="nav-link" id="download-tab" data-toggle="tab" href="#download" role="tab"
                     aria-controls="download" aria-selected="false">Downloads</a>
             </li>
+
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -117,6 +141,12 @@
                     release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing
                     software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </div>
+            <div class="tab-pane fade" id="models" role="tabpanel" aria-labelledby="models-tab">
+                <p>Models</p>
+            </div>
+            <div class="tab-pane fade" id="assesories" role="tabpanel" aria-labelledby="assesories-tab">
+                <p>Assesories</p>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -303,6 +333,25 @@
 </div>
 <!-- Related Product End -->
 
+
+<!-- Model Popup  -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/banner-img.svg" alt="" style="width:100%;">
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <?php include_once("footer.php");?>
 

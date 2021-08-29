@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -6,7 +12,7 @@ body {
 .banner-section {
   position: relative;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../images/banner.svg);
   background-size: cover;
   display: -webkit-box;
@@ -16,7 +22,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
 }
 
 .banner-section header .search {
@@ -50,7 +55,7 @@ header {
           flex-direction: column;
   gap: 40px;
   position: relative;
-  z-index: 99;
+  z-index: 50;
 }
 
 header::after {
@@ -195,17 +200,24 @@ header .left-md {
 }
 
 header .left-md::after {
-  display: block;
-  width: 15px;
-  height: 40px;
-  content: url(../images/header-leftmd.svg);
+  content: "";
   position: absolute;
-  right: 0;
+  right: -30px;
   top: 0;
+  background: #48A951;
+  border-radius: 0 6px 12px 0;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  height: 40px;
+  width: 160px;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
 }
 
 header .left-md ul {
   background-color: #48A951;
+  position: relative;
+  z-index: 1;
 }
 
 header .right-md {
@@ -216,13 +228,18 @@ header .right-md {
 }
 
 header .right-md::before {
-  display: block;
-  width: 15px;
-  height: 40px;
-  content: url(../images/header-rightmd.svg);
+  content: "";
   position: absolute;
-  left: -45px;
-  top: 0;
+  display: inline-block;
+  background: #002672;
+  border-radius: 6px 0 0 12px;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  height: 40px;
+  width: 160px;
+  margin-left: -30px;
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
 }
 
 header .right-md ul {
@@ -263,6 +280,15 @@ header .menu .dropdown-menu {
 
 header .menu .dropdown-menu a {
   text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Mobile Menu  */
@@ -393,15 +419,23 @@ nav a:hover {
 }
 
 #menu a {
-  padding: 9px 0 5px;
+  padding: 9px 20px 5px;
   padding-left: 25px;
   font-size: 17px;
   font-weight: 400;
   -webkit-box-shadow: none;
           box-shadow: none;
-  display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.24);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #menu li:hover,
@@ -487,6 +521,15 @@ nav a:hover {
 
 .banner-nav .left-md li a {
   background-color: #48A951;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-nav .left-md li::before {
@@ -514,13 +557,16 @@ nav a:hover {
   position: relative;
 }
 
-.banner-nav .menu .dropdown {
-  display: none;
-}
-
 .banner-nav .menu .mob-dropdown {
   width: 100%;
   text-align: center;
+}
+
+.banner-nav .menu .mob-dropdown a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
 }
 
 .banner-nav .menu .mob-dropdown::before {
@@ -536,6 +582,19 @@ nav a:hover {
   z-index: 99;
 }
 
+.banner-nav .menu .mob-dropdown .dropdown .dropdown-menu {
+  background-color: #53b95d;
+  width: 100%;
+  left: 0;
+}
+
+.banner-nav .menu .mob-dropdown .dropdown .dropdown-menu a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
 .banner-nav .menu .mob-dropdown .dropdown li {
   width: 100%;
 }
@@ -546,6 +605,15 @@ nav a:hover {
 
 .banner-nav .menu .mob-dropdown .dropdown li a {
   background-color: #56bd60c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .banner-nav .menu li {
@@ -948,6 +1016,10 @@ ul.page-navigation span {
   width: 100%;
 }
 
+.product-banner .main .slider-nav img.control-c {
+  display: none !important;
+}
+
 .product-banner .main .slider-nav .slick-slide {
   padding: 10px;
 }
@@ -1016,7 +1088,7 @@ ul.page-navigation span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1078,8 +1150,8 @@ ul.page-navigation span {
 }
 
 .product-banner .right-md .bottom-content input {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   text-align: center;
   font-size: 26px;
   border: 1px solid #ddd;
@@ -1244,18 +1316,31 @@ ul.page-navigation span {
   gap: 25px;
 }
 
+.product-banner .mobile-product-menu {
+  display: none;
+  padding: 0 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
 .product-banner .product-menu {
   max-width: 100%;
   width: 350px;
 }
 
-.product-banner .product-menu ul.nav {
+.product-banner .product-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.product-banner .product-menu ul.nav a {
+.product-banner .product-menu ul .sub-menu ul {
+  padding-left: 10px;
+}
+
+.product-banner .product-menu ul a {
   font-size: 16px;
   font-style: italic;
   color: #191919;
@@ -1265,20 +1350,22 @@ ul.page-navigation span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 8px 16px;
 }
 
-.product-banner .product-menu ul.nav a i {
+.product-banner .product-menu ul a i {
   font-size: 20px;
 }
 
-.product-banner .product-menu ul.nav a i.rotate {
+.product-banner .product-menu ul a i.rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.product-banner .product-menu ul.nav a.active {
+.product-banner .product-menu ul a.active {
   background-color: transparent;
   font-weight: 700;
+  color: #191919;
 }
 
 .product-banner .product-menu .dropdown-content {
@@ -1294,6 +1381,45 @@ ul.page-navigation span {
   text-decoration: none !important;
   padding: 5px 0;
   display: inline-block;
+}
+
+.product-banner .product-menu.filter-nav {
+  position: fixed;
+  width: 300px;
+  height: 105vh;
+  margin: 0;
+  top: 0px;
+  padding: 80px 20px;
+  left: 0px;
+  background: #002672;
+  list-style-type: none;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  z-index: 99;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.product-banner .product-menu.filter-nav ul.nav a {
+  color: #fff;
+}
+
+.product-banner .overlay {
+  background-color: rgba(0, 0, 0, 0.301);
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+}
+
+.product-banner .overlay.show {
+  display: block;
 }
 
 .product-banner .product-right-md {
@@ -1400,7 +1526,7 @@ ul.page-navigation span {
   font-size: 22px;
   line-height: 25px;
   font-weight: 700;
-  color: #191919;
+  color: #191919 !important;
   margin-top: 15px;
   margin-left: 5px;
 }
@@ -1450,6 +1576,99 @@ ul.page-navigation span {
   height: 43px;
   text-align: center;
   color: #191919;
+}
+
+.aboutus {
+  padding: 60px 20px;
+  position: relative;
+}
+
+.aboutus p {
+  font-size: 20px;
+  color: #191919;
+}
+
+.banner-content {
+  position: absolute;
+  top: -70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.banner-content .col-sm-5 {
+  padding: 0;
+}
+
+.banner-content p {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20%;
+}
+
+.banner-content .about-img {
+  text-align: right;
+}
+
+.banner-content .about-img img {
+  width: 80%;
+}
+
+.mission-vission {
+  padding: 50px 20px;
+}
+
+.mission-vission .row {
+  gap: 80px;
+}
+
+.mission-vission .box {
+  width: 100%;
+  padding: 80px 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5F5F5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission-vission .box .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.mission-vission .box p {
+  max-width: 550px;
+  font-size: 30px;
+  color: #191919;
+  margin-bottom: 0;
+}
+
+.mission-vission .box:hover, .mission-vission .box:focus {
+  background-image: -webkit-gradient(linear, left top, right top, from(#002672), to(#48A951));
+  background-image: linear-gradient(to right, #002672, #48A951);
+}
+
+.mission-vission .box:hover p, .mission-vission .box:focus p {
+  color: #fff;
+}
+
+.mission-vission .box:hover img, .mission-vission .box:focus img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 /*************************
@@ -1512,6 +1731,13 @@ ul.page-navigation span {
   }
   .product-banner .right-md .bottom-content .wish-list {
     padding: 10px;
+  }
+  .mission-vission .box p {
+    font-size: 28px;
+    max-width: 650px;
+  }
+  .mission-vission .box {
+    padding: 60px 100px;
   }
 }
 
@@ -1623,6 +1849,25 @@ ul.page-navigation span {
   .product-banner .product-right-md .product-head .sort span {
     font-size: 15px;
   }
+  .banner-content {
+    top: -60%;
+  }
+  .banner-content p {
+    font-size: 17px;
+  }
+  .aboutus p {
+    font-size: 17px;
+  }
+  .mission-vission .box {
+    padding: 60px;
+  }
+  .mission-vission .box p {
+    font-size: 22px;
+    max-width: 550px;
+  }
+  .mission-vission .box img {
+    width: 190px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1639,6 +1884,7 @@ ul.page-navigation span {
   }
   .banner-section {
     height: auto;
+    min-height: auto;
   }
   .banner-section .carousel.slide {
     padding-bottom: 50px;
@@ -1772,6 +2018,18 @@ ul.page-navigation span {
   .product-banner .product-right-md .product-head .sort button {
     font-size: 14px;
   }
+  .aboutus p {
+    font-size: 15px;
+  }
+  .mission-vission .box img {
+    width: 150px;
+  }
+  .mission-vission .box {
+    gap: 20px;
+  }
+  .mission-vission .box p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1782,7 +2040,7 @@ ul.page-navigation span {
     display: none;
   }
   header.container-fluid {
-    padding: 30px 40px 0;
+    padding: 30px 40px;
     gap: 0;
   }
   header.container-fluid .row {
@@ -1822,6 +2080,34 @@ ul.page-navigation span {
   }
   header.container-fluid .row .search form i {
     font-size: 25px;
+  }
+  .banner-section header.container-fluid .row {
+    border: none;
+  }
+  .banner-section .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner-section header .innerpage-logo {
+    display: none;
+  }
+  .banner-section .logo {
+    display: block;
+  }
+  .banner-section header.container-fluid .row .search {
+    width: 100%;
+    border-bottom: 1px solid #191919;
+  }
+  .banner-section header.container-fluid .row .search ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
   }
   header::after {
     background-color: #fff;
@@ -1890,7 +2176,11 @@ ul.page-navigation span {
     padding: 40px 50px;
   }
   footer.container-fluid .left-md {
-    max-width: 50%;
+    max-width: 350px;
+  }
+  footer.container-fluid .left-md p {
+    font-size: 16px;
+    text-align: center;
   }
   footer.container-fluid .row {
     -webkit-box-pack: center;
@@ -1918,6 +2208,18 @@ ul.page-navigation span {
   }
   header .row {
     gap: 25px;
+  }
+  footer.container-fluid .md {
+    display: none;
+  }
+  footer.container-fluid .right-md {
+    width: 100%;
+    text-align: center;
+  }
+  footer.container-fluid .footer-ul li a {
+    font-size: 16px;
+    color: #F4F4F4;
+    line-height: 22px;
   }
   /*************************
 	-	Product List Page Css	-
@@ -1979,12 +2281,21 @@ ul.page-navigation span {
     width: 20px !important;
     z-index: 99;
   }
+  .product-banner .col-sm-6 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
   .product-banner .right-md {
     background-color: transparent;
     padding: 0;
   }
   .product-banner .right-md .feacherd {
     display: none;
+  }
+  .product-banner .main .slider-nav img.control-c {
+    display: block !important;
   }
   #myTab,
   #myTabContent {
@@ -2001,6 +2312,20 @@ ul.page-navigation span {
     padding: 10px 30px;
     font-size: 16px;
   }
+  ul.page-navigation {
+    display: none;
+  }
+  .product-banner .product-menu {
+    display: none;
+  }
+  .product-banner .product-menu.filter-nav {
+    display: block !important;
+  }
+  .product-banner .mobile-product-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   /*************************
 	-	Product  Page Css	-
 	**************************/
@@ -2014,6 +2339,53 @@ ul.page-navigation span {
   }
   .product-banner .product-right-md .product-head {
     display: none;
+  }
+  .aboutus {
+    padding: 60px 50px;
+  }
+  .aboutus p {
+    font-size: 16px;
+  }
+  .banner-content {
+    position: relative;
+  }
+  .banner-content .about-img {
+    display: none;
+  }
+  .banner-content p {
+    color: #191919;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  .mission-vission .box:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mission-vission .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  .mission-vission .box p {
+    font-size: 18px;
+  }
+  .mission-vission .box .img {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .mission-vission .box .img img {
+    max-width: 90px;
   }
 }
 
@@ -2033,7 +2405,7 @@ ul.page-navigation span {
     width: 100px;
   }
   header .search ul li h6 {
-    font-size: 13px;
+    font-size: 11.5px;
   }
   .product-section .row {
     gap: 10px;
@@ -2082,6 +2454,9 @@ ul.page-navigation span {
             flex: 0 0 80%;
     max-width: 80%;
   }
+  /*************************
+	-	About Us Css	-
+	**************************/
 }
 
 @media screen and (max-width: 479px) {
@@ -2089,7 +2464,13 @@ ul.page-navigation span {
     padding: 10px;
   }
   header .search ul li h6 {
-    font-size: 11px;
+    font-size: 9.5px;
+  }
+  header .search ul li span {
+    font-size: 8px;
+  }
+  header.container-fluid .row .search form i {
+    font-size: 17px;
   }
   header .search ul li img {
     width: 18px;
@@ -2211,6 +2592,32 @@ ul.page-navigation span {
   .product-banner .right-md .bottom-content a.get-quote {
     padding: 8px 20px;
     font-size: 14px;
+  }
+  .banner-content {
+    margin: 0;
+    padding: 0;
+  }
+  .aboutus {
+    padding: 20px;
+  }
+  .aboutus p {
+    text-align: justify;
+  }
+  .mission-vission {
+    padding: 20px 30px;
+  }
+  .mission-vission .row {
+    gap: 35px;
+  }
+  .mission-vission .box {
+    padding: 20px;
+  }
+  .mission-vission .box .img img {
+    max-width: 70px;
+  }
+  .mission-vission .box p {
+    font-size: 16px;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=main.css.map */
