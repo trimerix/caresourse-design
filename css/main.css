@@ -1637,6 +1637,7 @@ ul.page-navigation span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 60px;
 }
 
 .mission-vission .box .img {
@@ -1651,8 +1652,7 @@ ul.page-navigation span {
 }
 
 .mission-vission .box p {
-  max-width: 550px;
-  font-size: 30px;
+  font-size: 20px;
   color: #191919;
   margin-bottom: 0;
 }
@@ -1731,10 +1731,6 @@ ul.page-navigation span {
   }
   .product-banner .right-md .bottom-content .wish-list {
     padding: 10px;
-  }
-  .mission-vission .box p {
-    font-size: 28px;
-    max-width: 650px;
   }
   .mission-vission .box {
     padding: 60px 100px;
@@ -1863,7 +1859,6 @@ ul.page-navigation span {
   }
   .mission-vission .box p {
     font-size: 22px;
-    max-width: 550px;
   }
   .mission-vission .box img {
     width: 190px;

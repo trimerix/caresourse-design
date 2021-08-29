@@ -1236,14 +1236,14 @@
             background-color: #F5F5F5;
             justify-content: space-between;
             align-items: center;
+            gap: 60px;
             .img {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
             }
             p {
-                max-width: 550px;
-                font-size: 30px;
+                font-size: 20px;
                 color: $text-color;
                 margin-bottom: 0;
             }
@@ -1324,10 +1324,6 @@
             padding: 10px;
         }
         // About Page Css 
-        .mission-vission .box p {
-            font-size: 28px;
-            max-width: 650px;
-        }
         .mission-vission .box {
             padding: 60px 100px;
         }
@@ -1454,7 +1450,6 @@
         .mission-vission .box {
             p {
                 font-size: 22px;
-                max-width: 550px;
             }
             img {
                 width: 190px;
