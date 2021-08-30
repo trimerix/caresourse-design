@@ -8,7 +8,7 @@
       }
 
       .banner-section {
-          min-height: 80vh;
+          min-height: 70vh;
           overflow: unset;
       }
 
@@ -16,14 +16,8 @@
           position: relative;
       }
 
-      .banner p {
-          margin: 50px 0;
-          height: 200px;
-          display: flex;
-          align-items: flex-end;
-      }
 
-      @media screen and (max-width:767px) {
+      @media screen and (max-width:1365px) {
           .banner-section {
               min-height: 575px;
           }
@@ -93,62 +87,36 @@
       <!-- Banner End -->
   </section>
 
-  <div class="container aboutus">
-      <div class="row banner-content container">
-          <div class="col-sm-5">
 
+  <!-- Blog Detils Section  -->
+  <div class="blogdetails">
+      <div class="box">
+          <h2>Business contents insurance is a type of business insurance that can protect</h2>
+          <div class="date">
+              <i class="far fa-calendar-alt" aria-hidden="true"></i>
+              23/04/2021
           </div>
-          <div class="about-img">
-              <img src="images/about-img.png" alt="About US Image">
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-6">
-              <p>"Caresourse" is in the business line of providing a wide array of Scientific & Laboratory
-                  Equipment, Medical, Surgical Equipment & Instruments, Water Testing Products from top
-                  manufacturing brand worldwide. </p>
-              <p>Over the years, our world has been accumulated by the COVID -19 which pushes us to pursue our goal to
-                  build a standard of high quality products at very reasonable prices. <br><br>
+          <img src="images/banner.svg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+              doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+              fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+              tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 
-                  We at "Caresource" ensure that we hold ourselves accountable to the highest standards by meeting our
-                  customers’ needs precisely and completely whenever they patronize our products. <br><br>
 
-                  We are continuously evolving to become an industry leader in the vibrant field of Medical
-                  Technologies.</p>
-          </div>
-      </div>
-  </div>
-
-  <div class="container mission-vission">
-      <div class="row">
-          <div class="box">
-              <p>"Caresourse" a globally recognized trading company established world-wide with an excellence in
-                  products and services. We strive to meet the increasing and diversified demands of clients by
-                  providing standard and state of the art products. Having partnered with various world renowned and
-                  reputed suppliers across the globe we are able to update our clients of the fast moving trends and
-                  have emerged as the most preferred supplier for numerous top end clients in the region.</p>
-              <div class="img">
-                  <img src="images/mission.svg" alt="mission">
-                  <img src="images/mission-text.svg" alt="mission">
-              </div>
-
-          </div>
-
-          <div class="box">
-              <div class="img">
-                  <img src="images/vision.svg" alt="vision">
-                  <img src="images/vission-text.svg" alt="vision">
-              </div>
-
-              <p>We as a company are well aware that we have a social impact and commitment as an organization beyond
-                  our core business objectives on the world in which we live, and the people we interact with. Our
-                  actions impact our employees, our customers, our suppliers, the communities in which we live and work,
-                  and the environment. As a responsible and ethical participant in the global community our purchasing
-                  policy takes sustainability and ethical sourcing into consideration throughout all stages of the
-                  buying cycle.</p>
-
-          </div>
       </div>
   </div>
+  <!-- Blog Detils Section  -->
+
+
+
+
+
+
 
   <?php include_once("footer.php");?>

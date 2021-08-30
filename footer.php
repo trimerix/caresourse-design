@@ -4,30 +4,33 @@
         <div class="row">
             <div class="left-md">
                 <img src="images/logo-footer.svg" alt="company logo">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's</p>
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's</p> -->
                 <ul class="social-media">
                     <li>
-                        <a href="#" target="_blank"><img src="images/whatsapp.svg" alt=""></a>
+                        <a href="http://wa.me/971529418683" target="_blank"><img src="images/whatsapp.svg" alt=""></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank"><img src="images/fb.svg" alt=""></a>
+                        <a href="https://www.facebook.com/Caresourceglobalcom-100454609047404" target="_blank"><img
+                                src="images/fb.svg" alt=""></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank"><img src="images/instagram.svg" alt=""></a>
+                        <a href="https://www.instagram.com/caresourceglobal2021/" target="_blank"><img
+                                src="images/instagram.svg" alt=""></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank"><img src="images/youtube.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCUHdzooQSbHJjw7n9rVl5nQ" target="_blank"><img
+                                src="images/youtube.svg" alt=""></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank"><img src="images/pinterest.svg" alt=""></a>
+                        <a href="https://www.pinterest.com/Caresource2/_saved/" target="_blank"><img
+                                src="images/pinterest.svg" alt=""></a>
                     </li>
                     <li>
-                        <a href="#" target="_blank"><img src="images/linkedin.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/caresource-global-22714621a/" target="_blank"><img
+                                src="images/linkedin.svg" alt=""></a>
                     </li>
-                    <li>
-                        <a href="#" target="_blank"></a>
-                    </li>
+
                 </ul>
             </div>
             <div class="md">
@@ -74,11 +77,18 @@
             <div class="right-md">
                 <h6>Contact</h6>
                 <ul class="footer-ul">
-                    <li><a href="#">
-                            Warehouse No: 3, Plot 215-321 <br> Umm Ramool, Rashidiya <br> PO Box # 94703, Dubai, UAE
-                        </a></li>
-                    <li><a href="mailto:sales@caresourceglobal.com">sales@caresourceglobal.com</a></li>
-                    <li><a href="tel:971508026308">Hotline: +971 50 8026308</a></li>
+                    <li><a href="tel:971529418683"><span>Dubai Office</span>:&nbsp;&nbsp; <i
+                                class="fas fa-mobile-alt"></i>
+                            &nbsp;
+                            +971 529 418 683</a></li>
+                    <li><a href="tel:639997620397"><span>Philippines Office</span>:&nbsp;&nbsp; <i
+                                class="fas fa-mobile-alt"></i>
+                            &nbsp; +639 997 620 397</a></li>
+                    <li><a href="http://wa.me/971529418683"><span>India Office</span>:&nbsp;&nbsp; <i
+                                class="fab fa-whatsapp"></i>
+                            &nbsp; +971
+                            529 418
+                            683</a></li>
                 </ul>
             </div>
         </div>
@@ -143,6 +153,16 @@ $('.sub-menu ul').hide();
 $(".sub-menu a").click(function() {
     $(this).parent(".sub-menu").children("ul").slideToggle("100");
     $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+});
+</script>
+
+<!-- Mobile Nav Dropdown  -->
+
+
+
+<script>
+$("#mob-dropdown").on("click", function() {
+    $(this).toggleClass("mob-dropdown");
 });
 </script>
 </body>

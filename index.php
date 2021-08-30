@@ -17,7 +17,7 @@
                             <a href="about.php">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="blog.php">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
                             <a href="best-sellers.php">Best Sellers</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="contactus.php">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -170,29 +170,26 @@
         <div class="col">
             <div class="img">
                 <div class="dot"></div>
-                <img src="images/service-img1.svg" alt="Lorem Ipsum">
+                <img src="images/service-img1.svg" alt="Quality Products">
             </div>
 
-            <h6>Lorem Ipsum</h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h6>Quality Products</h6>
         </div>
         <div class="col">
             <div class="img">
                 <div class="dot"></div>
-                <img src="images/service-img2.svg" alt="Lorem Ipsum">
+                <img src="images/service-img2.svg" alt="Prompt Delivery">
             </div>
 
-            <h6>Lorem Ipsum</h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h6>Prompt Delivery</h6>
         </div>
         <div class="col">
             <div class="img">
                 <div class="dot"></div>
-                <img src="images/service-img3.svg" alt="Lorem Ipsum">
+                <img src="images/service-img3.svg" alt="Best Price Guaranteed">
             </div>
 
-            <h6>Lorem Ipsum</h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h6>Best Price Guaranteed</h6>
         </div>
         <div class="col">
             <div class="img">
@@ -200,21 +197,10 @@
                 <img src="images/service-img4.svg">
             </div>
 
-            <h6>Lorem Ipsum</h6>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <h6>Worldwide Sourcing</h6>
         </div>
     </div>
 </div>
 <!-- Why should you choose us End -->
 
 <?php include_once("footer.php");?>
-
-<!-- Mobile Nav Dropdown  -->
-
-
-
-<script>
-$("#mob-dropdown").on("click", function() {
-    $(this).toggleClass("mob-dropdown");
-});
-</script>

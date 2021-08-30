@@ -31,26 +31,29 @@
         <img src="images/logo.svg" class="logo">
         <ul class="social-media">
             <li>
-                <a href="#" target="_blank"><img src="images/whatsapp.svg" alt=""></a>
+                <a href="http://wa.me/971529418683" target="_blank"><img src="images/whatsapp.svg" alt=""></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="images/fb.svg" alt=""></a>
+                <a href="https://www.facebook.com/Caresourceglobalcom-100454609047404" target="_blank"><img
+                        src="images/fb.svg" alt=""></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="images/instagram.svg" alt=""></a>
+                <a href="https://www.instagram.com/caresourceglobal2021/" target="_blank"><img
+                        src="images/instagram.svg" alt=""></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="images/youtube.svg" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCUHdzooQSbHJjw7n9rVl5nQ" target="_blank"><img
+                        src="images/youtube.svg" alt=""></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="images/pinterest.svg" alt=""></a>
+                <a href="https://www.pinterest.com/Caresource2/_saved/" target="_blank"><img src="images/pinterest.svg"
+                        alt=""></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="images/linkedin.svg" alt=""></a>
+                <a href="https://www.linkedin.com/in/caresource-global-22714621a/" target="_blank"><img
+                        src="images/linkedin.svg" alt=""></a>
             </li>
-            <li>
-                <a href="#" target="_blank"></a>
-            </li>
+
         </ul>
         <nav role='navigation'>
             <div id="menuToggle">
@@ -61,9 +64,9 @@
                 <span></span>
 
                 <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="blog.php">Blog</a></li>
                     <li class='sub-menu'><a href='#settings'>Product<div class='fa fa-caret-down right'></div></a>
                         <ul>
                             <li><a href="#">Product Category</a></li>
@@ -84,9 +87,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href='#profile'>
+                    <li><a href="best-sellers.php">
                             Best Sellers</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="contactus.php">Contact us</a></li>
 
 
                 </ul>
@@ -104,7 +107,7 @@
                     <a href="about.php">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="blog.php">Blog</a>
                 </li>
             </ul>
         </div>
@@ -139,7 +142,7 @@
                     <a href="best-sellers.php">Best Sellers</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="contactus.php">Contact Us</a>
                 </li>
             </ul>
         </div>

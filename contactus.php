@@ -16,14 +16,8 @@
           position: relative;
       }
 
-      .banner p {
-          margin: 50px 0;
-          height: 200px;
-          display: flex;
-          align-items: flex-end;
-      }
 
-      @media screen and (max-width:767px) {
+      @media screen and (max-width:1365px) {
           .banner-section {
               min-height: 575px;
           }
@@ -93,62 +87,82 @@
       <!-- Banner End -->
   </section>
 
-  <div class="container aboutus">
-      <div class="row banner-content container">
-          <div class="col-sm-5">
-
-          </div>
-          <div class="about-img">
-              <img src="images/about-img.png" alt="About US Image">
-          </div>
-      </div>
+  <!-- Locations Start  -->
+  <div class="container office-location">
       <div class="row">
-          <div class="col-sm-6">
-              <p>"Caresourse" is in the business line of providing a wide array of Scientific & Laboratory
-                  Equipment, Medical, Surgical Equipment & Instruments, Water Testing Products from top
-                  manufacturing brand worldwide. </p>
-              <p>Over the years, our world has been accumulated by the COVID -19 which pushes us to pursue our goal to
-                  build a standard of high quality products at very reasonable prices. <br><br>
+          <div class="col-sm-4">
+              <div class="box">
+                  <img src="images/location-icon.png" alt="Location Icon">
+                  <h3>Dubai Office</h3>
+                  <p>CARESOURCE for SCIENTIFIC & LABORATORY EQUIPMENT TR. CO. L.L.C</p>
+                  <p>3, Plot 215-321, Umm Ramool, Rashidiya PO Box # 94703, Dubai, UAE</p>
+                  <p>Mobile: +971529418683</p>
+                  <p>Office Timing: 9:00 Am to 6:00PM (SUNDAY TO THURSDAY) </p>
 
-                  We at "Caresource" ensure that we hold ourselves accountable to the highest standards by meeting our
-                  customers’ needs precisely and completely whenever they patronize our products. <br><br>
+              </div>
+          </div>
 
-                  We are continuously evolving to become an industry leader in the vibrant field of Medical
-                  Technologies.</p>
+          <div class="col-sm-4">
+              <div class="box">
+                  <img src="images/location-icon.png" alt="Location Icon">
+                  <h3>Philippines Office</h3>
+                  <p>CARESOURCE GLOBAL INC</p>
+                  <p>BLK 72 lot 18A Jp Rizal Street Upper Bicutan Taguig City</p>
+                  <p>Email: sales@caresourceglobal.com</p>
+                  <p>Whatsapp: +971529418683</p>
+                  <p>Mobile: +639997620397</p>
+              </div>
+          </div>
+
+          <div class="col-sm-4">
+              <div class="box">
+                  <img src="images/location-icon.png" alt="Location Icon">
+                  <h3>India Office</h3>
+                  <p>CARESOURCE GLOBAL LTD</p>
+                  <p>Forza mall -1 Office No: F85 Tirur Kerala India</p>
+                  <p>Email: sales@caresourceglobal.com</p>
+                  <p>Whatsapp: +971529418683</p>
+              </div>
           </div>
       </div>
   </div>
+  <!-- Locations End -->
 
-  <div class="container mission-vission">
-      <div class="row">
-          <div class="box">
-              <p>"Caresourse" a globally recognized trading company established world-wide with an excellence in
-                  products and services. We strive to meet the increasing and diversified demands of clients by
-                  providing standard and state of the art products. Having partnered with various world renowned and
-                  reputed suppliers across the globe we are able to update our clients of the fast moving trends and
-                  have emerged as the most preferred supplier for numerous top end clients in the region.</p>
-              <div class="img">
-                  <img src="images/mission.svg" alt="mission">
-                  <img src="images/mission-text.svg" alt="mission">
+
+  <!-- Input Boxes Start  -->
+  <div class="container">
+      <div class="container-fluid inputboxes">
+          <h6>Get A Quote</h6>
+          <div class="row">
+              <div class="col-sm-6">
+                  <input type="text" name="name" placeholder="Enter your name">
               </div>
-
-          </div>
-
-          <div class="box">
-              <div class="img">
-                  <img src="images/vision.svg" alt="vision">
-                  <img src="images/vission-text.svg" alt="vision">
+              <div class="col-sm-6">
+                  <input type="email" name="mail" placeholder="Enter your email">
               </div>
-
-              <p>We as a company are well aware that we have a social impact and commitment as an organization beyond
-                  our core business objectives on the world in which we live, and the people we interact with. Our
-                  actions impact our employees, our customers, our suppliers, the communities in which we live and work,
-                  and the environment. As a responsible and ethical participant in the global community our purchasing
-                  policy takes sustainability and ethical sourcing into consideration throughout all stages of the
-                  buying cycle.</p>
-
+              <div class="col-sm-6">
+                  <input type="text" name="number" placeholder="Enter your contact number">
+              </div>
           </div>
+          <div class="row">
+              <div class="col-sm-12">
+                  <textarea name="message" placeholder="Enter message"></textarea>
+              </div>
+          </div>
+          <button type="submit">Submit</button>
       </div>
   </div>
+  <!-- Input Boxes End  -->
+
+
+  <!-- Map Start  -->
+  <div class="container-fluid map">
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1804.6788229304775!2d55.37174012057747!3d25.224876256402123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEzJzI5LjMiTiA1NcKwMjInMjIuMiJF!5e0!3m2!1sen!2sin!4v1630316125401!5m2!1sen!2sin"
+          width="100%" height="100%" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  <!-- Map End  -->
+
+
 
   <?php include_once("footer.php");?>

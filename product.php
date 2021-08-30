@@ -24,18 +24,17 @@
                     <a class="nav-link" id="navtab3-tab" data-toggle="pill" href="#navtab3" role="tab"
                         aria-controls="navtab3" aria-selected="false">Laboratory Consumables</a>
                 </li>
-                <li class="sub-menu"><a class="nav-link" href='#'>Product Category<div class="fa fa-caret-down right">
+                <li class="sub-menu"><a class="nav-link">Product Category<div class="fa fa-caret-down right">
                         </div></a>
                     <ul>
                         <li><a href="#">Product Category</a></li>
                         <li><a href="#">Product Category</a></li>
-                        <li class="sub-menu"><a class="nav-link" href='#'>Product Category<div
-                                    class="fa fa-caret-down right">
+                        <li class="sub-menu"><a class="nav-link">Product Category<div class="fa fa-caret-down right">
                                 </div></a>
                             <ul>
                                 <li><a href="#">Product Category</a></li>
                                 <li><a href="#">Product Category</a></li>
-                                <li class="sub-menu"><a class="nav-link" href='#'>Product Category<div
+                                <li class="sub-menu"><a class="nav-link">Product Category<div
                                             class="fa fa-caret-down right">
                                         </div></a>
                                     <ul>
